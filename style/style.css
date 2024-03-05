@@ -1,24 +1,21 @@
-/* styles.css */
+@media screen and (max-width: 2400px) {
+    /* Styles for smaller screens */
+    [data-testid="stAppViewContainer"] > .main {
+        background-size: cover;
+    }
 
-[data-testid="stAppViewContainer"] > .main {
-    /* Main background image styles */
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-attachment: local;
+    [data-testid="stSidebar"] > div:first-child {
+        background-size: cover;
+    }
 }
 
-[data-testid="stSidebar"] > div:first-child {
-    /* Sidebar background image styles */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+@media screen and (min-width: 769px) {
+    /* Styles for larger screens */
+    [data-testid="stAppViewContainer"] > .main {
+        background-size: 100%;
+    }
 
-[data-testid="stHeader"] {
-    /* Header styles */
-    background: rgba(0,0,0,0);
-}
-
-[data-testid="stToolbar"] {
-    /* Toolbar styles */
-    right: 2rem;
+    [data-testid="stSidebar"] > div:first-child {
+        background-size: 150%;
+    }
 }

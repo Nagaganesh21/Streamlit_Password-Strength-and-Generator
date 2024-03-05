@@ -43,16 +43,23 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 add_page_title()
 show_pages(
     [
-        Page("streamlit_app.py", "main_info", "💻"),
+        Page("streamlit_app.py", "Main Information", "💻"),
 
         # # 2024 Content
         Section("2024", "🧙‍♂️"),
-        Page("pages/PasswordStrength.py", "Password Strength", "📚", in_section=True),
+        #bold Password Strength and apply purple color
+
+        Page("pages/PasswordStrength.py","Password Strength", "📚", in_section=True),
         Page("pages/PasswordGenerator.py", "Password Generator", "📚", in_section=True),
+
+        # # Projects list
+        Section("My other Projects list", "🧙‍♂️"),
+        Page("pages/OtherProjectLinks.py", "Other Projects", "📚", in_section=True),
+
     ]
 )
 
-st.markdown("#### 👨‍🔧 This webpage is having great features. please find below:")
+st.markdown("#### 👨‍🔧 This webpage is having a great features. please find below:")
 st.markdown("""
 - [Password Strength](#PasswordStrength)
 - [Password Generator](#PasswordGenerator)
