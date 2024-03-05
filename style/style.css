@@ -1,0 +1,24 @@
+/* styles.css */
+
+[data-testid="stAppViewContainer"] > .main {
+    /* Main background image styles */
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: local;
+}
+
+[data-testid="stSidebar"] > div:first-child {
+    /* Sidebar background image styles */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+[data-testid="stHeader"] {
+    /* Header styles */
+    background: rgba(0,0,0,0);
+}
+
+[data-testid="stToolbar"] {
+    /* Toolbar styles */
+    right: 2rem;
+}
